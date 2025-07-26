@@ -1,20 +1,11 @@
 ---
 import NavBar from "../components/NavBar.astro";
+import Layout from "../layouts/Layout.astro";
 
 // server only
 const name = "Ingenieria Lopez Liao";
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Ingenieria Lopez Liao... Coming Soon</title>
-  </head>
-  <body>
-    <NavBar />
-    <h1>{name}</h1>
-  </body>
-</html>
+<Layout>
+  <NavBar />
+</Layout>

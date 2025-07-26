@@ -1,12 +1,91 @@
 ---
-const navTitle = "Navigation";
+const navTitle = "Ingenieria Lopez Liao"; // You can use this for the logo text or remove it if using an image
 ---
 
-<span>{navTitle}</span>
-<nav>
-  <a href="/">Home Page</a>
-  <a href="/about">About Page</a>
-  <a href="/contact">Contact Page</a>
-</nav>
+<header class="bg-primary text-primary-content p-4 shadow-md">
+  <div class="container mx-auto flex items-center justify-between flex-wrap">
+    <a
+      href="/"
+      class="flex items-center space-x-2 text-2xl font-bold text-accent"
+    >
+      <img
+        src="/favicon.svg"
+        alt="Ingenieria Lopez Liao Logo"
+        class="h-8 w-8"
+      />
+      <span>{navTitle}</span>
+    </a>
 
-<hr />
+    <nav class="hidden md:flex space-x-4">
+      <a
+        href="/"
+        class="hover:text-accent-focus px-3 py-2 rounded-md transition-colors duration-200"
+        >Home Page</a
+      >
+      <a
+        href="/about"
+        class="hover:text-accent-focus px-3 py-2 rounded-md transition-colors duration-200"
+        >About Page</a
+      >
+      <a
+        href="/contact"
+        class="hover:text-accent-focus px-3 py-2 rounded-md transition-colors duration-200"
+        >Contact Page</a
+      >
+    </nav>
+
+    <div class="md:hidden">
+      <button
+        id="mobile-menu-button"
+        class="text-primary-content hover:text-accent-focus focus:outline-none"
+      >
+        <svg
+          class="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <div
+    id="mobile-menu"
+    class="hidden md:hidden mt-4 bg-primary rounded-md shadow-lg p-4"
+  >
+    <a href="/" class="block text-primary-content hover:text-accent-focus py-2"
+      >Home Page</a
+    >
+    <a
+      href="/about"
+      class="block text-primary-content hover:text-accent-focus py-2"
+      >About Page</a
+    >
+    <a
+      href="/contact"
+      class="block text-primary-content hover:text-accent-focus py-2"
+      >Contact Page</a
+    >
+  </div>
+</header>
+
+<script>
+  // JavaScript for responsive mobile menu toggle
+  document.addEventListener("DOMContentLoaded", () => {
+    const mobileMenuButton = document.getElementById("mobile-menu-button");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    if (mobileMenuButton && mobileMenu) {
+      mobileMenuButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    }
+  });
+</script>
