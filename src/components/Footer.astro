@@ -1,0 +1,57 @@
+---
+import { Icon } from "astro-icon/components"; // Importa el componente Icon
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="bg-primary text-primary-content p-8 mt-10">
+  <div
+    class="container mx-auto flex flex-col md:flex-row justify-between items-center md:items-start space-y-8 md:space-y-0"
+  >
+    <div class="text-center md:text-left">
+      <h3 class="text-xl font-semibold mb-2">Contáctanos</h3>
+      <p>Email: info@inglopezliao.com</p>
+      <p>Teléfono: +507 1234-5678</p>
+      <p>Dirección: Calle Ficticia 123, Ciudad, País</p>
+    </div>
+
+    <div class="text-center">
+      <h3 class="text-xl font-semibold mb-2">Síguenos</h3>
+      <div class="flex justify-center md:justify-start space-x-4">
+        <a
+          href="https://facebook.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-primary-content hover:text-accent-focus transition-colors duration-200"
+        >
+          <Icon name="mdi:facebook" class="w-6 h-6" />
+          {/* Ejemplo de icono de Material Design Icons */}
+          <span class="sr-only">Facebook</span>
+        </a>
+        <a
+          href="https://twitter.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-primary-content hover:text-accent-focus transition-colors duration-200"
+        >
+          <Icon name="mdi:twitter" class="w-6 h-6" />
+          <span class="sr-only">Twitter</span>
+        </a>
+        <a
+          href="https://linkedin.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-primary-content hover:text-accent-focus transition-colors duration-200"
+        >
+          <Icon name="mdi:linkedin" class="w-6 h-6" />
+          <span class="sr-only">LinkedIn</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="text-center md:text-right">
+      <p>
+        &copy; {currentYear} Ingenieria Lopez Liao. Todos los derechos reservados.
+      </p>
+    </div>
+  </div>
+</footer>

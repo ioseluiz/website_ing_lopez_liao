@@ -1,0 +1,143 @@
+---
+// You can define image sources here or pass them as props
+const images = [
+  {
+    src: "proyecto_01.png",
+    alt: "Imagen de Proyecto 1",
+  },
+  {
+    src: "proyecto_02.png",
+    alt: "Imagen de Proyecto 2",
+  },
+  {
+    src: "proyecto_03.png",
+    alt: "Imagen de Proyecto 3",
+  },
+];
+---
+
+<section class="w-full relative overflow-hidden">
+  <div
+    id="carousel-container"
+    class="flex transition-transform duration-700 ease-in-out"
+  >
+    {
+      images.map((image) => (
+        <div class="w-full flex-shrink-0">
+          <img
+            src={image.src}
+            alt={image.alt}
+            class="w-full h-auto object-cover"
+          />
+        </div>
+      ))
+    }
+  </div>
+
+  <button
+    id="prev-slide"
+    class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full z-10 hover:bg-opacity-75 focus:outline-none focus:ring-2 focus:ring-accent"
+  >
+    <svg
+      class="w-6 h-6"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+      ><path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M15 19l-7-7 7-7"></path></svg
+    >
+    <span class="sr-only">Anterior</span>
+  </button>
+  <button
+    id="next-slide"
+    class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full z-10 hover:bg-opacity-75 focus:outline-none focus:ring-2 focus:ring-accent"
+  >
+    <svg
+      class="w-6 h-6"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+      ><path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M9 5l7 7-7 7"></path></svg
+    >
+    <span class="sr-only">Siguiente</span>
+  </button>
+
+  <div
+    id="dots-container"
+    class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2 z-10"
+  >
+    {
+      images.map((_, index) => (
+        <button
+          class="dot w-3 h-3 bg-white bg-opacity-50 rounded-full focus:outline-none focus:ring-2 focus:ring-accent"
+          data-index={index}
+        />
+      ))
+    }
+  </div>
+</section>
+
+<script client:load>
+  const carouselContainer = document.getElementById("carousel-container");
+  const prevButton = document.getElementById("prev-slide");
+  const nextButton = document.getElementById("next-slide");
+  const dotsContainer = document.getElementById("dots-container");
+  const slides = carouselContainer
+    ? Array.from(carouselContainer.children)
+    : [];
+  const dots = dotsContainer ? Array.from(dotsContainer.children) : [];
+  let currentIndex = 0;
+  const totalSlides = slides.length;
+
+  const updateCarousel = () => {
+    if (carouselContainer) {
+      carouselContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+    dots.forEach((dot, index) => {
+      if (dot) {
+        if (index === currentIndex) {
+          dot.classList.add("bg-opacity-100", "bg-accent"); // Highlight active dot
+          dot.classList.remove("bg-opacity-50", "bg-white");
+        } else {
+          dot.classList.remove("bg-opacity-100", "bg-accent");
+          dot.classList.add("bg-opacity-50", "bg-white");
+        }
+      }
+    });
+  };
+
+  const showNextSlide = () => {
+    currentIndex = (currentIndex + 1) % totalSlides;
+    updateCarousel();
+  };
+
+  const showPrevSlide = () => {
+    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+    updateCarousel();
+  };
+
+  prevButton?.addEventListener("click", showPrevSlide);
+  nextButton?.addEventListener("click", showNextSlide);
+
+  dots.forEach((dot) => {
+    dot?.addEventListener("click", (event) => {
+      currentIndex = parseInt(event.target.dataset.index);
+      updateCarousel();
+    });
+  });
+
+  // Initial setup
+  updateCarousel();
+
+  // Optional: Auto-play the carousel
+  // setInterval(showNextSlide, 5000); // Change slide every 5 seconds
+</script>

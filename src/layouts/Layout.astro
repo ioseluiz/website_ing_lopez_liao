@@ -1,4 +1,6 @@
 ---
+import Footer from "../components/Footer.astro";
+import NavBar from "../components/NavBar.astro";
 import "../styles/global.css";
 ---
 
@@ -11,6 +13,8 @@ import "../styles/global.css";
     <title>Ingenieria Lopez Liao... Coming Soon</title>
   </head>
   <body>
+    <NavBar />
     <slot />
+    <Footer />
   </body>
 </html>
