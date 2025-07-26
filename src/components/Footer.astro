@@ -1,5 +1,5 @@
 ---
-import { Icon } from "astro-icon/components"; // Importa el componente Icon
+import { Icon } from "astro-icon/components";
 const currentYear = new Date().getFullYear();
 ---
 
@@ -9,9 +9,20 @@ const currentYear = new Date().getFullYear();
   >
     <div class="text-center md:text-left">
       <h3 class="text-xl font-semibold mb-2">Contáctanos</h3>
-      <p>Email: info@inglopezliao.com</p>
-      <p>Teléfono: +507 1234-5678</p>
-      <p>Dirección: Calle Ficticia 123, Ciudad, País</p>
+      <div class="space-y-2">
+        <p class="flex items-center justify-center md:justify-start space-x-2">
+          <Icon name="mdi:email" class="w-5 h-5" />
+          <span>Email: info@inglopezliao.com</span>
+        </p>
+        <p class="flex items-center justify-center md:justify-start space-x-2">
+          <Icon name="mdi:whatsapp" class="w-5 h-5" />
+          <span>Teléfono: +507 1234-5678</span>
+        </p>
+        <p class="flex items-center justify-center md:justify-start space-x-2">
+          <Icon name="mdi:map-marker" class="w-5 h-5" />
+          <span>Dirección: Calle Ficticia 123, Ciudad, País</span>
+        </p>
+      </div>
     </div>
 
     <div class="text-center">
@@ -24,7 +35,6 @@ const currentYear = new Date().getFullYear();
           class="text-primary-content hover:text-accent-focus transition-colors duration-200"
         >
           <Icon name="mdi:facebook" class="w-6 h-6" />
-          {/* Ejemplo de icono de Material Design Icons */}
           <span class="sr-only">Facebook</span>
         </a>
         <a
