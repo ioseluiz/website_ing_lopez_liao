@@ -2,21 +2,21 @@
 const navTitle = "Ingenieria Lopez Liao"; // You can use this for the logo text or remove it if using an image
 ---
 
-<header class="bg-primary text-primary-content p-4 shadow-md">
+<header class="bg-primary-content text-primary font-bold p-4 shadow-md">
   <div class="container mx-auto flex items-center justify-between flex-wrap">
     <a
       href="/"
       class="flex items-center space-x-2 text-2xl font-bold text-accent"
     >
-      <img
-        src="/favicon.svg"
-        alt="Ingenieria Lopez Liao Logo"
-        class="h-8 w-8"
-      />
-      <span>{navTitle}</span>
+      <img src="logo.png" alt="Ingenieria Lopez Liao Logo" class="h-18 w-18" />
     </a>
 
     <nav class="hidden md:flex space-x-4">
+      <a
+        href="/"
+        class="hover:text-accent-focus px-3 py-2 rounded-md transition-colors duration-200"
+        >Inicio</a
+      >
       <a
         href="/about"
         class="hover:text-accent-focus px-3 py-2 rounded-md transition-colors duration-200"
@@ -30,14 +30,14 @@ const navTitle = "Ingenieria Lopez Liao"; // You can use this for the logo text 
       <a
         href="/contact"
         class="hover:text-accent-focus px-3 py-2 rounded-md transition-colors duration-200"
-        >Contactenos</a
+        >Contáctanos</a
       >
     </nav>
 
     <div class="md:hidden">
       <button
         id="mobile-menu-button"
-        class="text-primary-content hover:text-accent-focus focus:outline-none"
+        class="text-primary hover:text-accent-focus focus:outline-none"
       >
         <svg
           class="w-6 h-6"
