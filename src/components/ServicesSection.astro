@@ -1,0 +1,73 @@
+---
+// src/components/ServicesSection.astro
+import { Icon } from "astro-icon/components";
+
+const services = [
+  {
+    title: "Construcción Residencial",
+    description:
+      "Casas personalizadas, renovaciones y adiciones construidas según sus especificaciones exactas con mano de obra de calidad.",
+    icon: "mdi:home-city",
+  },
+  {
+    title: "Construcción Comercial",
+    description:
+      "Edificios de oficinas, locales comerciales y complejos comerciales diseñados para las necesidades empresariales modernas.",
+    icon: "mdi:office-building",
+  },
+  {
+    title: "Proyectos Industriales",
+    description:
+      "Almacenes, instalaciones de fabricación y complejos industriales construidos para la eficiencia y durabilidad.",
+    icon: "mdi:factory",
+  },
+  {
+    title: "Renovaciones y Remodelaciones",
+    description:
+      "Transformamos espacios existentes con nuestros servicios expertos de renovación y remodelación.",
+    icon: "mdi:wrench",
+  },
+  {
+    title: "Gestión de Proyectos",
+    description:
+      "Supervisión completa del proyecto desde la planificación hasta la finalización con gerentes de proyecto dedicados.",
+    icon: "mdi:clipboard-check-outline",
+  },
+  {
+    title: "Reparaciones de Emergencia",
+    description:
+      "Servicios de construcción y reparación de emergencia 24/7 cuando más los necesite.",
+    icon: "mdi:clock-fast",
+  },
+];
+---
+
+<section class="py-12 bg-gray-50">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-12">
+      <h2 class="text-4xl font-extrabold text-gray-900">
+        Nuestros Servicios de Construcción
+      </h2>
+      <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
+        Desde los cimientos hasta el acabado, ofrecemos soluciones integrales de
+        construcción adaptadas para satisfacer sus necesidades específicas y
+        superar sus expectativas.
+      </p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {
+        services.map((service) => (
+          <div class="bg-white p-8 rounded-lg shadow-lg text-center transition-transform transform hover:-translate-y-2">
+            <div class="flex items-center justify-center mb-4">
+              <Icon name={service.icon} class="w-16 h-16 text-accent" />
+            </div>
+            <h3 class="text-2xl font-bold text-gray-800 mb-3">
+              {service.title}
+            </h3>
+            <p class="text-gray-600">{service.description}</p>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>
