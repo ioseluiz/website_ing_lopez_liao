@@ -1,0 +1,90 @@
+---
+import { Image } from "astro:assets";
+import logo from "../assets/logo.png";
+
+const navLinks = [
+  { href: "/", text: "Inicio" },
+  { href: "/nosotros", text: "Nosotros" },
+  { href: "/servicios", text: "Servicios" },
+  { href: "/proyectos", text: "Proyectos" },
+  { href: "/contacto", text: "Contacto" },
+];
+---
+
+<header
+  class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-gray-200"
+>
+  <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+    <a
+      href="/"
+      class="flex items-center text-2xl font-bold text-primary-dark hover:text-primary transition-colors"
+    >
+      <Image
+        src={logo}
+        alt="Logo de Ingeniería L²"
+        class="h-10 w-auto mr-3"
+        width={40}
+        height={40}
+      />
+      <span>Ingeniería L<sup class="text-accent">²</sup></span>
+    </a>
+    <div class="hidden md:flex items-center space-x-6">
+      {
+        navLinks.map((link) => (
+          <a
+            href={link.href}
+            class="text-text-primary hover:text-primary transition-colors font-medium"
+          >
+            {link.text}
+          </a>
+        ))
+      }
+    </div>
+    <!-- Menú Móvil (simplificado) -->
+    <div class="md:hidden">
+      <button
+        id="mobile-menu-button"
+        class="text-text-primary focus:outline-none"
+      >
+        <svg
+          class="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+          ><path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16m-7 6h7"></path></svg
+        >
+      </button>
+    </div>
+  </nav>
+  <!-- Panel Menú Móvil -->
+  <div
+    id="mobile-menu"
+    class="hidden md:hidden bg-white border-t border-gray-200"
+  >
+    <div class="container mx-auto px-6 py-4 flex flex-col space-y-4">
+      {
+        navLinks.map((link) => (
+          <a
+            href={link.href}
+            class="text-text-primary hover:text-primary transition-colors font-medium text-center"
+          >
+            {link.text}
+          </a>
+        ))
+      }
+    </div>
+  </div>
+</header>
+
+<script>
+  document
+    .getElementById("mobile-menu-button")
+    ?.addEventListener("click", () => {
+      document.getElementById("mobile-menu")?.classList.toggle("hidden");
+    });
+</script>

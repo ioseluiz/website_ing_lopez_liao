@@ -1,14 +1,153 @@
 ---
-// src/pages/index.astro
-import Hero from "../components/Hero.astro";
-import VisionMission from "../components/VisionMission.astro";
 import Layout from "../layouts/Layout.astro";
+import heroImage from "../assets/hero.jpg";
+import { Image } from "astro:assets";
+// Importa las imágenes de los proyectos destacados
+import muroHarariImg from "../assets/muro_harari.png";
+import canchaScalaImg from "../assets/cancha_escuela_scala.png";
+import pacificCenterImg from "../assets/pacific_center_escalera.png";
 
-// server only
-const name = "Ingenieria Lopez Liao";
+// Datos de ejemplo para proyectos destacados. Reemplazar con datos reales.
+const featuredProjects = [
+  {
+    name: "Muro Rompeolas Familia Harari",
+    img: muroHarariImg,
+  },
+  {
+    name: "Cancha Multiuso Escuela Scala",
+    img: canchaScalaImg,
+  },
+  {
+    name: "Proyecto Pacific Center",
+    img: pacificCenterImg,
+  },
+];
 ---
 
-<Layout>
-  <Hero />
-  <VisionMission />
+<Layout
+  title="Ingeniería López Liao S.A. | Construcción y Diseño"
+  description="Empresa líder en planeamiento, diseño, administración, construcción y mantenimiento de proyectos de ingeniería civil en Panamá."
+>
+  <!-- Hero Section -->
+  <section
+    class="relative h-[60vh] min-h-[400px] flex items-center justify-center text-white"
+  >
+    <Image
+      src={heroImage}
+      alt="Fondo de construcción de un gran edificio"
+      quality="mid"
+      format="webp"
+      class="absolute inset-0 w-full h-full object-cover -z-10"
+      width={1920}
+      height={1080}
+    />
+    <div class="absolute inset-0 bg-black/60"></div>
+    <div class="container mx-auto px-6 text-center relative">
+      <h1
+        class="text-4xl md:text-6xl font-extrabold leading-tight mb-4 animate-fade-in-down"
+      >
+        Ingeniería López Liao S.A.
+      </h1>
+      <p class="text-xl md:text-2xl font-light animate-fade-in-up">
+        "Construimos confianza, diseñamos futuro."
+      </p>
+      <a
+        href="/proyectos"
+        class="mt-8 inline-block bg-accent text-white font-bold py-3 px-8 rounded-lg hover:bg-opacity-90 transition-transform hover:scale-105"
+      >
+        Ver Proyectos
+      </a>
+    </div>
+  </section>
+
+  <!-- Servicios Destacados -->
+  <section class="py-20 bg-background-light">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-primary-dark">
+          Nuestros Servicios
+        </h2>
+        <p class="text-text-secondary mt-2 max-w-2xl mx-auto">
+          Soluciones integrales para proyectos en el sector privado con un
+          historial comprobado de excelencia.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Servicio 1 -->
+        <div class="bg-white p-6 rounded-lg shadow-md text-center">
+          <h3 class="font-bold text-xl mb-2 text-primary">
+            Diseño Estructural
+          </h3>
+          <p class="text-text-secondary">
+            Cálculos y diseños para estructuras de concreto y acero,
+            garantizando seguridad y eficiencia.
+          </p>
+        </div>
+        <!-- Servicio 2 -->
+        <div class="bg-white p-6 rounded-lg shadow-md text-center">
+          <h3 class="font-bold text-xl mb-2 text-primary">Construcción</h3>
+          <p class="text-text-secondary">
+            Ejecución de obras verticales y horizontales, cumpliendo con los más
+            altos estándares de calidad.
+          </p>
+        </div>
+        <!-- Servicio 3 -->
+        <div class="bg-white p-6 rounded-lg shadow-md text-center">
+          <h3 class="font-bold text-xl mb-2 text-primary">Ingeniería Civil</h3>
+          <p class="text-text-secondary">
+            Soluciones completas para obras civiles, desde el planeamiento hasta
+            el mantenimiento.
+          </p>
+        </div>
+        <!-- Servicio 4 -->
+        <div class="bg-white p-6 rounded-lg shadow-md text-center">
+          <h3 class="font-bold text-xl mb-2 text-primary">Áreas Costeras</h3>
+          <p class="text-text-secondary">
+            Especialistas en el diseño y construcción de estructuras marítimas
+            como muros y rompeolas.
+          </p>
+        </div>
+      </div>
+      <div class="text-center mt-12">
+        <a href="/servicios" class="text-accent font-semibold hover:underline"
+          >Ver todos los servicios →</a
+        >
+      </div>
+    </div>
+  </section>
+
+  <!-- Proyectos Destacados -->
+  <section class="py-20">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-primary-dark">
+          Proyectos Destacados
+        </h2>
+        <p class="text-text-secondary mt-2">
+          Un vistazo a nuestro compromiso con la calidad y la innovación.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {
+          featuredProjects.map((project) => (
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden group">
+              <Image
+                src={project.img}
+                alt={project.name}
+                class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                width={600}
+                height={400}
+                format="webp"
+              />
+              <div class="p-6">
+                <h3 class="font-bold text-xl text-primary-dark">
+                  {project.name}
+                </h3>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
 </Layout>

@@ -1,71 +1,52 @@
 ---
-import { Icon } from "astro-icon/components";
 const currentYear = new Date().getFullYear();
 ---
 
-<footer class="bg-primary text-primary-content p-8 mt-10">
-  <div
-    class="container mx-auto flex flex-col md:flex-row justify-between items-center md:items-start space-y-8 md:space-y-0"
-  >
-    <div class="text-center md:text-left">
-      <h3 class="text-xl font-semibold mb-2">Contáctanos</h3>
-      <div class="space-y-2">
-        <p class="flex items-center justify-center md:justify-start space-x-2">
-          <Icon name="mdi:email" class="w-5 h-5" />
-          <span>Email: info@inglopezliao.com</span>
-        </p>
-        <a
-          href="https://wa.me/50760701319"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="flex items-center justify-center md:justify-start space-x-2 text-primary-content hover:text-accent-focus transition-colors duration-200"
-        >
-          <Icon name="mdi:whatsapp" class="w-5 h-5" />
-          <span>Teléfono: +507 6070-1319</span>
-        </a>
-        <p class="flex items-center justify-center md:justify-start space-x-2">
-          <Icon name="mdi:map-marker" class="w-5 h-5" />
-          <span>Dirección: Calle Ficticia 123, Ciudad, País</span>
-        </p>
+<footer class="bg-primary-dark text-white">
+  <div class="container mx-auto px-6 py-12">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+      <div>
+        <h3 class="text-2xl font-bold mb-2">Ingeniería L²</h3>
+        <p class="text-gray-300">Construimos confianza, diseñamos futuro.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold text-lg mb-4">Navegación</h4>
+        <ul class="space-y-2">
+          <li>
+            <a href="/nosotros" class="hover:text-accent transition-colors"
+              >Nosotros</a>
+          </li>
+          <li>
+            <a href="/servicios" class="hover:text-accent transition-colors"
+              >Servicios</a>
+          </li>
+          <li>
+            <a href="/proyectos" class="hover:text-accent transition-colors"
+              >Proyectos</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold text-lg mb-4">Contacto</h4>
+        <ul class="space-y-2 text-gray-300">
+          <li>
+            Email: <a
+              href="mailto:ingenierialopezliao@gmail.com"
+              class="hover:text-accent transition-colors"
+              >ingenierialopezliao@gmail.com</a>
+          </li>
+          <li>Teléfono: 390-093</li>
+          <li>Celular: 6070-1319</li>
+          <li>
+            Instagram: <a href="#" class="hover:text-accent transition-colors"
+              >@IngenieriaL2</a>
+          </li>
+        </ul>
       </div>
     </div>
-
-    <div class="text-center">
-      <h3 class="text-xl font-semibold mb-2">Síguenos</h3>
-      <div class="flex justify-center md:justify-start space-x-4">
-        <a
-          href="https://facebook.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="text-primary-content hover:text-accent-focus transition-colors duration-200"
-        >
-          <Icon name="mdi:facebook" class="w-6 h-6" />
-          <span class="sr-only">Facebook</span>
-        </a>
-        <a
-          href="https://twitter.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="text-primary-content hover:text-accent-focus transition-colors duration-200"
-        >
-          <Icon name="mdi:twitter" class="w-6 h-6" />
-          <span class="sr-only">Twitter</span>
-        </a>
-        <a
-          href="https://linkedin.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="text-primary-content hover:text-accent-focus transition-colors duration-200"
-        >
-          <Icon name="mdi:linkedin" class="w-6 h-6" />
-          <span class="sr-only">LinkedIn</span>
-        </a>
-      </div>
-    </div>
-
-    <div class="text-center md:text-right">
+    <div class="mt-12 border-t border-gray-700 pt-6 text-center text-gray-400">
       <p>
-        &copy; {currentYear} Ingenieria Lopez Liao. Todos los derechos reservados.
+        &copy; {currentYear} Ingeniería López Liao S.A. Todos los derechos reservados.
       </p>
     </div>
   </div>

@@ -1,0 +1,84 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import nosotrosHeroImg from "../assets/nosotros_hero.jpg";
+import equipoL2Img from "../assets/equipo_l2.png";
+---
+
+<Layout
+  title="Nosotros - Ingeniería López Liao S.A."
+  description="Conoce nuestra historia, misión, visión y el equipo detrás de Ingeniería López Liao S.A., comprometidos con la excelencia en cada proyecto."
+>
+  <header class="relative text-white py-20 text-center">
+    <Image
+      src={nosotrosHeroImg}
+      alt="Equipo de ingeniería trabajando en una obra"
+      quality="mid"
+      format="webp"
+      class="absolute inset-0 w-full h-full object-cover -z-10"
+      width={1920}
+      height={400}
+    />
+    <div class="absolute inset-0 bg-black/60"></div>
+    <div class="container mx-auto px-6 relative">
+      <h1 class="text-4xl font-bold">Sobre Nosotros</h1>
+      <p class="mt-2 text-lg text-gray-300">
+        Compromiso, rigor y excelencia en cada obra.
+      </p>
+    </div>
+  </header>
+
+  <section class="py-20">
+    <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h2 class="text-3xl font-bold text-primary-dark mb-4">
+          Nuestra Historia
+        </h2>
+        <p class="text-text-secondary mb-4">
+          Fundada en 2017 por el Ing. Teofanes López Jurado, egresado de la
+          Universidad Tecnológica de Panamá (UTP), nuestra empresa nació con la
+          visión de aplicar más de 15 años de experiencia en proyectos de gran
+          envergadura para ofrecer soluciones de ingeniería de alto nivel en el
+          sector privado.
+        </p>
+        <p class="text-text-secondary">
+          Hoy, Ingeniería López Liao, S.A. es sinónimo de responsabilidad,
+          innovación y resultados comprobados, manteniendo un equilibrio entre
+          el éxito empresarial, la satisfacción del cliente y el desarrollo de
+          nuestro equipo profesional.
+        </p>
+      </div>
+      <div>
+        <Image
+          src={equipoL2Img}
+          alt="Equipo de Ingeniería López Liao"
+          class="rounded-lg shadow-xl"
+          width={600}
+          height={400}
+          format="webp"
+        />
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 bg-background-light">
+    <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12">
+      <div class="bg-white p-8 rounded-lg shadow-md">
+        <h3 class="text-2xl font-bold text-primary mb-3">Misión</h3>
+        <p class="text-text-secondary">
+          Entregar soluciones de ingeniería y construcción con excelencia
+          técnica, eficiencia operativa y compromiso social, contribuyendo al
+          éxito sostenible de nuestros clientes y al progreso del país.
+        </p>
+      </div>
+      <div class="bg-white p-8 rounded-lg shadow-md">
+        <h3 class="text-2xl font-bold text-primary mb-3">Visión</h3>
+        <p class="text-text-secondary">
+          Proyectamos consolidarnos como la empresa líder en ingeniería y
+          construcción del mercado nacional, reconocida por su innovación,
+          confiabilidad y compromiso con la sostenibilidad.
+        </p>
+      </div>
+    </div>
+  </section>
+</Layout>

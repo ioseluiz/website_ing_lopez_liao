@@ -1,22 +1,39 @@
 ---
 import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
 import NavBar from "../components/NavBar.astro";
+
 import "../styles/global.css";
+
+interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
 ---
 
-<html lang="en">
+<!doctype html>
+<html lang="es">
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-    <title>Ingenieria Lopez Liao... Coming Soon</title>
+    <title>{title}</title>
   </head>
-  <body>
-    <NavBar />
-    <main class="mt-8">
+  <body class="bg-white text-text-primary antialiased">
+    <Header />
+    <main>
       <slot />
     </main>
     <Footer />
+    <style is:global>
+      /* Estilos globales si son necesarios */
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
   </body>
 </html>

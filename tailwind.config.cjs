@@ -5,10 +5,20 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'primary': '#0056B3', // A shade of blue for primary color
-        'primary-content': '#FFFFFF', // White text on primary background
-        'accent': '#FFD700',   // A shade of gold for accent color
-        'accent-focus': '#FFA500', // A slightly darker gold for hover/focus states
+        primary: {
+          DEFAULT: '#008080', // Verde Azulado Principal
+          dark: '#348b97',
+          light: '#004D40',
+        },
+        'accent': {
+          DEFAULT: '#ae1f40', // Naranja/Dorado
+        },
+       'text-primary': '#1A202C',
+       'text-secondary': '#718096',
+       'background-light': '#F7FAFC',
+      },
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
       },
     },
   },

@@ -1,0 +1,67 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+const services = [
+  {
+    title: "Diseño y Cálculos Estructurales",
+    description:
+      "Análisis y diseño de sistemas estructurales para edificaciones de concreto o acero, optimizando recursos y garantizando la máxima seguridad.",
+  },
+  {
+    title: "Planeamiento y Construcción",
+    description:
+      "Gestión integral de proyectos, desde la fase de planeamiento y viabilidad hasta la ejecución y entrega final de la obra.",
+  },
+  {
+    title: "Construcción Vertical y Horizontal",
+    description:
+      "Experiencia comprobada en la construcción de edificaciones residenciales, comerciales e industriales, así como obras de infraestructura.",
+  },
+  {
+    title: "Soluciones de Ingeniería Civil",
+    description:
+      "Ofrecemos un amplio abanico de soluciones en ingeniería civil, adaptadas a las necesidades específicas de cada proyecto.",
+  },
+  {
+    title: "Soluciones en Áreas Costeras",
+    description:
+      "Diseño y construcción de estructuras de protección costera, como muros rompeolas y retenes, para mitigar la erosión y proteger inversiones.",
+  },
+  {
+    title: "Obras Civiles de Ingeniería",
+    description:
+      "Ejecución de diversas obras civiles, incluyendo cimentaciones, movimientos de tierra, y más, con un enfoque en la calidad y puntualidad.",
+  },
+];
+---
+
+<Layout
+  title="Servicios - Ingeniería López Liao S.A."
+  description="Descubre nuestra gama de servicios de ingeniería y construcción, desde el diseño estructural hasta la ejecución de obras complejas."
+>
+  <header class="bg-primary-dark text-white py-20">
+    <div class="container mx-auto px-6 text-center">
+      <h1 class="text-4xl font-bold">Nuestros Servicios</h1>
+      <p class="mt-2 text-lg text-gray-300">
+        Excelencia técnica para cada desafío constructivo.
+      </p>
+    </div>
+  </header>
+
+  <section class="py-20">
+    <div class="container mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {
+          services.map((service) => (
+            <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <h3 class="text-2xl font-bold text-primary mb-4">
+                {service.title}
+              </h3>
+              <p class="text-text-secondary">{service.description}</p>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+</Layout>

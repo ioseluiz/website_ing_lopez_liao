@@ -1,0 +1,107 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout
+  title="Contacto - Ingeniería López Liao S.A."
+  description="Póngase en contacto con nosotros para discutir su próximo proyecto. Estamos listos para brindarle soluciones de ingeniería de alta calidad."
+>
+  <header class="bg-primary-dark text-white py-20">
+    <div class="container mx-auto px-6 text-center">
+      <h1 class="text-4xl font-bold">Contáctanos</h1>
+      <p class="mt-2 text-lg text-gray-300">
+        ¿Listo para construir tu próximo proyecto? Hablemos.
+      </p>
+    </div>
+  </header>
+
+  <section class="py-20">
+    <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12">
+      <!-- Formulario de Contacto -->
+      <div>
+        <h2 class="text-3xl font-bold text-primary-dark mb-6">
+          Envíanos un Mensaje
+        </h2>
+        <form action="#" method="POST" class="space-y-6">
+          <div>
+            <label
+              for="name"
+              class="block text-sm font-medium text-text-secondary"
+              >Nombre Completo</label
+            >
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-primary focus:border-primary"
+            />
+          </div>
+          <div>
+            <label
+              for="email"
+              class="block text-sm font-medium text-text-secondary"
+              >Correo Electrónico</label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-primary focus:border-primary"
+            />
+          </div>
+          <div>
+            <label
+              for="message"
+              class="block text-sm font-medium text-text-secondary"
+              >Mensaje</label
+            >
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              required
+              class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-primary focus:border-primary"
+            ></textarea>
+          </div>
+          <div>
+            <button
+              type="submit"
+              class="w-full bg-accent text-white font-bold py-3 px-6 rounded-lg hover:bg-opacity-90 transition-all"
+            >
+              Enviar Mensaje
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Información de Contacto -->
+      <div class="bg-background-light p-8 rounded-lg">
+        <h2 class="text-3xl font-bold text-primary-dark mb-6">
+          Información Directa
+        </h2>
+        <div class="space-y-4 text-text-secondary">
+          <p><strong>Gerente General:</strong> Ing. Teofanes López</p>
+          <p>
+            <strong>Email:</strong>
+            <a
+              href="mailto:ingenierialopezliao@gmail.com"
+              class="text-primary hover:underline"
+              >ingenierialopezliao@gmail.com</a>
+          </p>
+          <p><strong>Teléfono de Oficina:</strong> 390-093</p>
+          <p><strong>Celular:</strong> 6070-1319</p>
+          <p>
+            <strong>Instagram:</strong>
+            <a href="#" class="text-primary hover:underline">@IngenieriaL2</a>
+          </p>
+          <p class="pt-4 border-t border-gray-300 mt-4">
+            Estamos disponibles para discutir las necesidades de su proyecto y
+            ofrecerle una cotización.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
