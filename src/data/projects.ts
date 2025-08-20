@@ -165,7 +165,7 @@ export const projects = [
     client: "Tecpa Group, S.A.", 
     year: "2018", 
     img: galeraPmaViejo,
-    area: "456.00 m²",
+    area: "1,470.00 m²",
     description: "Construcción de muro de fundaciones de galera. Proyecto Entregado",
     gallery: [
         galPmaViejo01,
