@@ -22,7 +22,13 @@ import Layout from "../layouts/Layout.astro";
         <h2 class="text-3xl font-bold text-primary-dark mb-6">
           Envíanos un Mensaje
         </h2>
-        <form action="#" method="POST" class="space-y-6">
+        <form
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          class="space-y-6"
+        >
+          <input type="hidden" name="form-name" value="contact" />
           <div>
             <label
               for="name"
@@ -88,9 +94,9 @@ import Layout from "../layouts/Layout.astro";
             <a
               href="mailto:ingenierialopezliao@gmail.com"
               class="text-primary hover:underline"
-              >ingenierialopezliao@gmail.com</a>
+              >ingenialopezliao@gmail.com</a>
           </p>
-          <p><strong>Teléfono de Oficina:</strong> 390-093</p>
+          <p><strong>Teléfono de Oficina:</strong> 390-0931</p>
           <p><strong>Celular:</strong> 6070-1319</p>
           <p>
             <strong>Instagram:</strong>
