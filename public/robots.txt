@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ingenierialopezliao.com/sitemap-index.xml
