@@ -63,7 +63,7 @@ export const projects = [
   },
   { 
     slug: "cancha-multiuso-scala",
-    name: "Cancha Multiuso Escuela Scala", 
+    name: "Cancha Multiuso Escuela Scala Penonome", 
     client: "Tecpa Group", 
     year: "2024", 
     img: canchaScalaImg,
@@ -91,7 +91,7 @@ export const projects = [
   },
   { 
     slug: "escalera-puente-pacific-center",
-    name: "Escalera y Puente en Pacific Center", 
+    name: "Escalera y Puente La Jungla Bowling, Pacific Center", 
     client: "Tikal Intercontinental", 
     year: "2023", 
     img: pacificCenterEscaleraImg,
@@ -105,7 +105,7 @@ export const projects = [
   },
   { 
     slug: "losa-bolos-pacific-center",
-    name: "Losa para Bolos en Pacific Center", 
+    name: "Estructura para Losa de Bolos La Jungla Bownling, Pacific Center", 
     client: "Tikal Intercontinental", 
     year: "2023", 
     img: pacificCenterLosaImg,
@@ -119,7 +119,7 @@ export const projects = [
   },
   { 
     slug: "sistema-incendio-melo",
-    name: "Sistema Contra Incendio MELO", 
+    name: "Caseta para Bomba Contra Incendio Grupo MELO", 
     client: "MELO, S.A.", 
     year: "2022", 
     img: cuartoBombasImg,
@@ -133,7 +133,7 @@ export const projects = [
   },
   { 
     slug: "techo-galera-seven-seas",
-    name: "Cambio de Techo Galera Seven Seas", 
+    name: "Cambio de Techo Galera Seven Seas Zona Libre", 
     client: "Tikal Intercontinental (ALISS)", 
     year: "2021", 
     img: galeraSevenSeasImg,
