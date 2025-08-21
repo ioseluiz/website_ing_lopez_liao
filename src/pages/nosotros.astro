@@ -3,6 +3,62 @@ import Layout from "../layouts/Layout.astro";
 import { Image } from "astro:assets";
 import nosotrosHeroImg from "../assets/nosotros_hero.jpg";
 import equipoL2Img from "../assets/equipo_l2.png";
+
+const experience = [
+  {
+    year: "2017 – 2025",
+    role: "Gerente de Proyectos y Operaciones",
+    company: "Ingeniería López Liao, S.A.",
+    description:
+      "Compañía de diseño estructural y construcciones de estructuras de acero, concreto y obras civiles.",
+  },
+  {
+    year: "2017 - 2019",
+    role: "Gerente de Proyecto (Residente)",
+    company: "Tikal Intercontinental, Talima Venture",
+    description:
+      "Proyecto Edificio Pacific Center (Hospital The Panamá Clinic, Teatro, Mall).",
+  },
+  {
+    year: "2016 - 2017",
+    role: "Gerente de Proyecto",
+    company: "Ingeniería Ger S.A.",
+    description:
+      "Proyecto Edificio Pine Hill Forest Gate Fase 2 (Torres 1 y 2, área social).",
+  },
+  {
+    year: "2014 - 2015",
+    role: "Gerente de Proyecto",
+    company: "Ingeniería RM S.A.",
+    description: "Proyecto Puntarena Fase 2 (Torres A y B, Plazas 3 y 4).",
+  },
+  {
+    year: "2012 - 2014",
+    role: "Gerente de Proyecto",
+    company: "Constructora López S.A. Conlosa",
+    description:
+      "Proyecto Edificio Street Mall (Fundaciones y Estructura de concreto).",
+  },
+  {
+    year: "2012",
+    role: "Gerente de Proyectos",
+    company: "Constructora Loma Alegre S.A.",
+    description:
+      "Proyecto Residencia Paitilla No. 29 Punta Pacifica (Fundaciones, Estructuras y Obra gris).",
+  },
+  {
+    year: "2010-2011",
+    role: "Ingeniero Residente",
+    company: "Constructora Ripard Este S.A.",
+    description: "Proyecto: Torre 5 Business Park Bladex Copa.",
+  },
+  {
+    year: "2009",
+    role: "Ingeniero Residente",
+    company: "Constructora Ripard Holding Corp.",
+    description: "Proyecto: Escuela Internacional.",
+  },
+];
 ---
 
 <Layout
@@ -19,7 +75,7 @@ import equipoL2Img from "../assets/equipo_l2.png";
       width={1920}
       height={400}
     />
-    <div class="absolute inset-0 bg-black/60"></div>
+    <div class="absolute inset-0 bg-black/60 -z-10"></div>
     <div class="container mx-auto px-6 relative">
       <h1 class="text-4xl font-bold">Sobre Nosotros</h1>
       <p class="mt-2 text-lg text-gray-300">
@@ -37,9 +93,9 @@ import equipoL2Img from "../assets/equipo_l2.png";
         <p class="text-text-secondary mb-4">
           Fundada en 2017 por el Ing. Teofanes López Jurado, egresado de la
           Universidad Tecnológica de Panamá (UTP), nuestra empresa nació con la
-          visión de aplicar más de 15 años de experiencia en proyectos de gran
-          envergadura para ofrecer soluciones de ingeniería de alto nivel en el
-          sector privado.
+          visión de aplicar más de 15 años de experiencia liderando proyectos de
+          construcción de gran envergadura y megaobras de infraestructura para
+          ofrecer soluciones de ingeniería de alto nivel en el sector privado.
         </p>
         <p class="text-text-secondary">
           Hoy, Ingeniería López Liao, S.A. es sinónimo de responsabilidad,
@@ -78,6 +134,37 @@ import equipoL2Img from "../assets/equipo_l2.png";
           construcción del mercado nacional, reconocida por su innovación,
           confiabilidad y compromiso con la sostenibilidad.
         </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-primary-dark">
+          Experiencia del Ing. Teófanes López
+        </h2>
+        <p class="text-text-secondary mt-2 max-w-3xl mx-auto">
+          Más de 15 años de liderazgo en proyectos de construcción de gran
+          envergadura y megaobras de infraestructura.
+        </p>
+      </div>
+      <div class="max-w-4xl mx-auto">
+        <div class="relative border-l-2 border-primary-light pl-8 space-y-10">
+          {
+            experience.map((item) => (
+              <div class="relative">
+                <div class="absolute -left-[43px] top-1 h-6 w-6 bg-primary rounded-full border-4 border-white" />
+                <p class="font-semibold text-primary">{item.year}</p>
+                <h3 class="text-xl font-bold text-text-primary mt-1">
+                  {item.role}
+                </h3>
+                <p class="font-medium text-text-secondary">{item.company}</p>
+                <p class="mt-2 text-text-secondary">{item.description}</p>
+              </div>
+            ))
+          }
+        </div>
       </div>
     </div>
   </section>
