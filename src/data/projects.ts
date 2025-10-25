@@ -56,6 +56,26 @@ import losaChillers09 from '../assets/proyecto_10_losa_chillers_pac_center/losa_
 
 
 export const projects = [
+  {
+    slug: "losa-chillers-pacific-center",
+    name: "Losa para Chillers - Edificio Pacific Center",
+    client: "Tikal Intercontinental",
+    year: "2025",
+    img: losaChillers01,
+    area: "115.00 m²",
+    description: "Diseño estructural y construcción de estructura de acero, fundaciones, losa, estructura de techo, cerramiento y fachada de cuarto de chillers",
+    gallery: [
+      losaChillers02,
+      losaChillers03,
+      losaChillers04,
+      losaChillers05,
+      losaChillers06,
+      losaChillers07,
+      losaChillers08,
+      losaChillers09
+
+    ]
+  },
   { 
     slug: "muro-rompeolas-harari",
     name: "Muro Rompeolas Familia Harari", 
@@ -182,24 +202,5 @@ export const projects = [
     ]
 
   },
-  {
-    slug: "losa-chillers-pacific-center",
-    name: "Losa para Chillers - Edificio Pacific Center",
-    client: "Tikal Intercontinental",
-    year: "2025",
-    img: losaChillers01,
-    area: "115.00 m²",
-    description: "Diseño estructural y construcción de estructura de acero, fundaciones, losa, estructura de techo, cerramiento y fachada de cuarto de chillers",
-    gallery: [
-      losaChillers02,
-      losaChillers03,
-      losaChillers04,
-      losaChillers05,
-      losaChillers06,
-      losaChillers07,
-      losaChillers08,
-      losaChillers09
-
-    ]
-  }
+  
 ];
