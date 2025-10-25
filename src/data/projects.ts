@@ -43,7 +43,16 @@ import heliPuerto03 from '../assets/proyecto_08_helipuerto/helipuerto_03.png';
 // Import imagenes galera 026 Panama Viejo
 import galPmaViejo01 from '../assets/proyecto_09_galera_pma_viejo/galera_PmaViejo_01.png';
 import galPmaViejo02 from '../assets/proyecto_09_galera_pma_viejo/galera_PmaViejo_02.png';
-
+// Import imagenes losa chillers pacific center
+import losaChillers01 from '../assets/proyecto_10_losa_chillers_pac_center/losa_chillers_01.jpeg';
+import losaChillers02 from '../assets/proyecto_10_losa_chillers_pac_center/losa_chillers_02.jpeg';
+import losaChillers03 from '../assets/proyecto_10_losa_chillers_pac_center/losa_chillers_03.jpeg';
+import losaChillers04 from '../assets/proyecto_10_losa_chillers_pac_center/losa_chillers_04.jpeg';
+import losaChillers05 from '../assets/proyecto_10_losa_chillers_pac_center/losa_chillers_05.jpeg';
+import losaChillers06 from '../assets/proyecto_10_losa_chillers_pac_center/losa_chillers_06.jpeg';
+import losaChillers07 from '../assets/proyecto_10_losa_chillers_pac_center/losa_chillers_07.jpeg';
+import losaChillers08 from '../assets/proyecto_10_losa_chillers_pac_center/losa_chillers_08.jpeg';
+import losaChillers09 from '../assets/proyecto_10_losa_chillers_pac_center/losa_chillers_09.jpeg';
 
 
 export const projects = [
@@ -173,4 +182,24 @@ export const projects = [
     ]
 
   },
+  {
+    slug: "losa-chillers-pacific-center",
+    name: "Losa para Chillers - Edificio Pacific Center",
+    client: "Tikal Intercontinental",
+    year: "2025",
+    img: losaChillers01,
+    area: "115.00 m²",
+    description: "Diseño estructural y construcción de estructura de acero, fundaciones, losa, estructura de techo, cerramiento y fachada de cuarto de chillers",
+    gallery: [
+      losaChillers02,
+      losaChillers03,
+      losaChillers04,
+      losaChillers05,
+      losaChillers06,
+      losaChillers07,
+      losaChillers08,
+      losaChillers09
+
+    ]
+  }
 ];
