@@ -27,6 +27,14 @@ import muroRompeolas13 from '../assets/proyecto_01_muro_rompeolas/muro_rompeolas
 import canchaScala01 from '../assets/proyecto_02_cancha_scala/cancha_scala_01.png';
 import canchaScala02 from '../assets/proyecto_02_cancha_scala/cancha_scala_02.png';
 import canchaScala03 from '../assets/proyecto_02_cancha_scala/cancha_scala_03.png';
+import canchaScala04 from '../assets/proyecto_02_cancha_scala/cancha_scala_04.jpg';
+import canchaScala05 from '../assets/proyecto_02_cancha_scala/cancha_scala_05.jpg';
+import canchaScala06 from '../assets/proyecto_02_cancha_scala/cancha_scala_06.jpg';
+import canchaScala07 from '../assets/proyecto_02_cancha_scala/cancha_scala_07.jpg';
+import canchaScala08 from '../assets/proyecto_02_cancha_scala/cancha_scala_08.jpg';
+import canchaScala09 from '../assets/proyecto_02_cancha_scala/cancha_scala_09.jpg';
+
+
 // Import imagenes de la galeria del proyecto Playa Dorada
 import playaDorada01 from '../assets/proyecto_03_playa_dorada/playa_dorada_01.png';
 import playaDorada02 from '../assets/proyecto_03_playa_dorada/playa_dorada_02.png';
@@ -99,7 +107,7 @@ export const projects = [
         muroRompeolas01,
         muroRompeolas02,
         muroRompeolas12,
-        muroRompeolas11,
+        muroRompeolas10,
         muroRompeolas13,
         muroRompeolas03,
         muroRompeolas04,
@@ -108,7 +116,7 @@ export const projects = [
         muroRompeolas07,
         muroRompeolas08,
         muroRompeolas09,
-        muroRompeolas10,
+        muroRompeolas11,
         
     ]
   },
@@ -123,7 +131,13 @@ export const projects = [
     gallery: [
         canchaScala01,
         canchaScala02,
-        canchaScala03
+        canchaScala03,
+        canchaScala04,
+        canchaScala05,
+        canchaScala06,
+        canchaScala07,
+        canchaScala08,
+        canchaScala09
     ]
   },
   { 
