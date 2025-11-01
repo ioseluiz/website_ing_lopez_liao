@@ -33,6 +33,7 @@ import canchaScala06 from '../assets/proyecto_02_cancha_scala/cancha_scala_06.jp
 import canchaScala07 from '../assets/proyecto_02_cancha_scala/cancha_scala_07.jpg';
 import canchaScala08 from '../assets/proyecto_02_cancha_scala/cancha_scala_08.jpg';
 import canchaScala09 from '../assets/proyecto_02_cancha_scala/cancha_scala_09.jpg';
+import canchaScala10 from '../assets/proyecto_02_cancha_scala/cancha_scala_10.jpg';
 
 
 // Import imagenes de la galeria del proyecto Playa Dorada
@@ -137,7 +138,8 @@ export const projects = [
         canchaScala06,
         canchaScala07,
         canchaScala08,
-        canchaScala09
+        canchaScala09,
+        canchaScala10
     ]
   },
   { 
