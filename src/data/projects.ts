@@ -99,6 +99,7 @@ export const projects = [
         muroRompeolas01,
         muroRompeolas02,
         muroRompeolas12,
+        muroRompeolas11,
         muroRompeolas13,
         muroRompeolas03,
         muroRompeolas04,
@@ -108,7 +109,7 @@ export const projects = [
         muroRompeolas08,
         muroRompeolas09,
         muroRompeolas10,
-        muroRompeolas11,
+        
     ]
   },
   { 
