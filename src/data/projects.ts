@@ -12,6 +12,17 @@ import galeraPmaViejo from '../assets/galeraPanamaViejoImg.png';
 import muroRompeolas01 from '../assets/proyecto_01_muro_rompeolas/muro_rompeolas_01.png';
 import muroRompeolas02 from '../assets/proyecto_01_muro_rompeolas/muro_rompeolas_02.png';
 import muroRompeolas03 from '../assets/proyecto_01_muro_rompeolas/muro_rompeolas_03.png';
+import muroRompeolas04 from '../assets/proyecto_01_muro_rompeolas/muro_rompeolas_04.jpg';
+import muroRompeolas05 from '../assets/proyecto_01_muro_rompeolas/muro_rompeolas_05.jpg';
+import muroRompeolas06 from '../assets/proyecto_01_muro_rompeolas/muro_rompeolas_06.jpg';
+import muroRompeolas07 from '../assets/proyecto_01_muro_rompeolas/muro_rompeolas_07.jpg';
+import muroRompeolas08 from '../assets/proyecto_01_muro_rompeolas/muro_rompeolas_08.jpg';
+import muroRompeolas09 from '../assets/proyecto_01_muro_rompeolas/muro_rompeolas_09.jpg';
+import muroRompeolas10 from '../assets/proyecto_01_muro_rompeolas/muro_rompeolas_10.jpg';
+import muroRompeolas11 from '../assets/proyecto_01_muro_rompeolas/muro_rompeolas_11.jpg';
+import muroRompeolas12 from '../assets/proyecto_01_muro_rompeolas/muro_rompeolas_12.jpg';
+import muroRompeolas13 from '../assets/proyecto_01_muro_rompeolas/muro_rompeolas_13.jpg';
+
 // Importar imagenes de la galeria del proyecto Cancha Multiuso Scala
 import canchaScala01 from '../assets/proyecto_02_cancha_scala/cancha_scala_01.png';
 import canchaScala02 from '../assets/proyecto_02_cancha_scala/cancha_scala_02.png';
@@ -87,7 +98,17 @@ export const projects = [
     gallery: [
         muroRompeolas01,
         muroRompeolas02,
+        muroRompeolas12,
+        muroRompeolas13,
         muroRompeolas03,
+        muroRompeolas04,
+        muroRompeolas05,
+        muroRompeolas06,
+        muroRompeolas07,
+        muroRompeolas08,
+        muroRompeolas09,
+        muroRompeolas10,
+        muroRompeolas11,
     ]
   },
   { 
