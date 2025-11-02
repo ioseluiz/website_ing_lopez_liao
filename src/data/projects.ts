@@ -36,10 +36,7 @@ import canchaScala09 from '../assets/proyecto_02_cancha_scala/cancha_scala_09.jp
 import canchaScala10 from '../assets/proyecto_02_cancha_scala/cancha_scala_10.jpg';
 
 
-// Import imagenes de la galeria del proyecto Playa Dorada
-import playaDorada01 from '../assets/proyecto_03_playa_dorada/playa_dorada_01.png';
-import playaDorada02 from '../assets/proyecto_03_playa_dorada/playa_dorada_02.png';
-import playaDorada03 from '../assets/proyecto_03_playa_dorada/playa_dorada_03.png';
+
 // Import imagenes de la galeria del proyecto Escalera Pacific Center
 import escaleraPacific01 from '../assets/proyecto_04_escalera_pacific/escalera_pacific_01.png';
 import escaleraPacific02 from '../assets/proyecto_04_escalera_pacific/escalera_pacific_02.png';
@@ -56,6 +53,18 @@ import ctoBomba03 from '../assets/proyecto_06_melo/melo_cto_bombas_03.png';
 import galSeven01 from '../assets/proyecto_07_galera_seven_seas/galera_seven_01.png';
 import galSeven02 from '../assets/proyecto_07_galera_seven_seas/galera_seven_02.png';
 import galSeven03 from '../assets/proyecto_07_galera_seven_seas/galera_seven_03.png';
+import galSeven04 from '../assets/proyecto_07_galera_seven_seas/galera_seven_04.jpeg';
+import galSeven05 from '../assets/proyecto_07_galera_seven_seas/galera_seven_05.jpeg';
+import galSeven06 from '../assets/proyecto_07_galera_seven_seas/galera_seven_06.jpeg';
+import galSeven07 from '../assets/proyecto_07_galera_seven_seas/galera_seven_07.jpeg';
+import galSeven08 from '../assets/proyecto_07_galera_seven_seas/galera_seven_08.jpeg';
+import galSeven09 from '../assets/proyecto_07_galera_seven_seas/galera_seven_09.jpeg';
+import galSeven10 from '../assets/proyecto_07_galera_seven_seas/galera_seven_10.jpeg';
+import galSeven11 from '../assets/proyecto_07_galera_seven_seas/galera_seven_11.jpeg';
+import galSeven12 from '../assets/proyecto_07_galera_seven_seas/galera_seven_12.jpeg';
+import galSeven13 from '../assets/proyecto_07_galera_seven_seas/galera_seven_13.jpeg';
+
+
 // Import imagenes helipuerto Pacific Center
 import heliPuerto01 from '../assets/proyecto_08_helipuerto/helipuerto_01.png';
 import heliPuerto02 from '../assets/proyecto_08_helipuerto/helipuerto_02.png';
@@ -142,20 +151,7 @@ export const projects = [
         canchaScala10
     ]
   },
-  { 
-    slug: "playa-dorada",
-    name: "Proyecto Playa Dorada (9 casas)", 
-    client: "Grupo Los Pueblos", 
-    year: "2023", 
-    img: playaDoradaImg,
-    area: "770.00 m²",
-    description: "Construcción completa de 9 residencias unifamiliares del modelo 'Arena' en el proyecto Playa Dorada.",
-    gallery: [
-        playaDorada01,
-        playaDorada02,
-        playaDorada03
-    ]
-  },
+  
   { 
     slug: "escalera-puente-pacific-center",
     name: "Escalera y Puente La Jungla Bowling, Pacific Center", 
@@ -209,7 +205,16 @@ export const projects = [
     gallery: [
         galSeven01,
         galSeven02,
-        galSeven03
+        galSeven03,
+        galSeven04,
+        galSeven05,
+        galSeven06,
+        galSeven07,
+        galSeven08,
+        galSeven09,
+        galSeven10,
+        galSeven11,
+        galSeven12
     ]
   },
   { 
