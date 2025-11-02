@@ -103,7 +103,7 @@ export const projects = [
     year: "2024", 
     img: muroHarariImg,
     area: "456.00 m²",
-    description: "Construcción de muro de retención y rompeolas frente a tablaestaca colapsada para protección costera.",
+    description: "Diseño estructural y construcción de muro de retención y rompeolas para protección costera, incluyendo diseño para evento de fondo de mar. El proyecto se ejecutó frente a una tablaestaca existente y colapsada, lo que requirió el diseño y construcción de un sistema de apuntalamiento especializado para asegurar la estabilidad durante la obra.",
     gallery: [
         muroRompeolas01,
         muroRompeolas02,
