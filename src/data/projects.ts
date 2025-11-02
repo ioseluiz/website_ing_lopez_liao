@@ -45,6 +45,14 @@ import escaleraPacific03 from '../assets/proyecto_04_escalera_pacific/escalera_p
 import losaBowling01 from '../assets/proyecto_05_losa_bowling/losa_bowling_01.png';
 import losaBowling02 from '../assets/proyecto_05_losa_bowling/losa_bowling_02.png';
 import losaBowling03 from '../assets/proyecto_05_losa_bowling/losa_bowling_03.png';
+import losaBowling04 from '../assets/proyecto_05_losa_bowling/losa_bowling_04.jpeg';
+import losaBowling05 from '../assets/proyecto_05_losa_bowling/losa_bowling_05.jpeg';
+import losaBowling06 from '../assets/proyecto_05_losa_bowling/losa_bowling_06.jpeg';
+import losaBowling07 from '../assets/proyecto_05_losa_bowling/losa_bowling_07.jpeg';
+import losaBowling08 from '../assets/proyecto_05_losa_bowling/losa_bowling_08.jpeg';
+import losaBowling09 from '../assets/proyecto_05_losa_bowling/losa_bowling_09.jpeg';
+
+
 // Import imagenes del cuarto de bombas MELO
 import ctoBomba01 from '../assets/proyecto_06_melo/melo_cto_bombas_01.png';
 import ctoBomba02 from '../assets/proyecto_06_melo/melo_cto_bombas_02.png';
@@ -177,7 +185,13 @@ export const projects = [
     gallery: [
         losaBowling01,
         losaBowling02,
-        losaBowling03
+        losaBowling03,
+        losaBowling04,
+        losaBowling05,
+        losaBowling06,
+        losaBowling07,
+        losaBowling08,
+        losaBowling09
     ]
   },
   { 
@@ -211,8 +225,8 @@ export const projects = [
         galSeven06,
         galSeven07,
         galSeven08,
-        galSeven09,
         galSeven10,
+        galSeven09,
         galSeven11,
         galSeven12
     ]
