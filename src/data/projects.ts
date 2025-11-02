@@ -50,7 +50,7 @@ import losaBowling05 from '../assets/proyecto_05_losa_bowling/losa_bowling_05.jp
 import losaBowling06 from '../assets/proyecto_05_losa_bowling/losa_bowling_06.jpeg';
 import losaBowling07 from '../assets/proyecto_05_losa_bowling/losa_bowling_07.jpeg';
 import losaBowling08 from '../assets/proyecto_05_losa_bowling/losa_bowling_08.jpeg';
-import losaBowling09 from '../assets/proyecto_05_losa_bowling/losa_bowling_09.jpeg';
+
 
 
 // Import imagenes del cuarto de bombas MELO
@@ -190,8 +190,7 @@ export const projects = [
         losaBowling05,
         losaBowling06,
         losaBowling07,
-        losaBowling08,
-        losaBowling09
+        losaBowling08
     ]
   },
   { 
